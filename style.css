@@ -159,6 +159,25 @@ header .navbar ul li:hover > ul{
         position: absolute;
         top: 200px;
         left: 0;
-        padding: 50px;
+    }
+    .container .content{
+        position: relative;
+        top: 100px;
+        left: 0;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .container{
+        position: relative;
+        top: 100px;
+        left: 0;
+    }
+    .container .content{
+        position: relative;
+        top: -50px;
+        left: 0;
+        padding: 10px;
     }
 }
