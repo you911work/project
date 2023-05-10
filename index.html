@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./folder.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>專題首頁</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html" class="logo">My<span>Code.</span></a>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="./About Me/index.html">關於我</a></li>
+                <li><a href="./ Count Down/index.html">結訓日期倒數</a></li>
+                <li><a href="#">範例 +</a>
+                    <ul>
+                        <li><a href="./fashion website/index.html">fashion</a></li>
+                        <li><a href="./food website/index.html">food</a></li>
+                        <li><a href="./PROJECT/index.html">PROJECT</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">電影介紹 +</a>
+                    <ul>
+                        <li><a href="./1_ETERNALS/index.html">ETERNALS</a></li>
+                        <li><a href="./2_Mulan/index.html">Mulan</a></li>
+                        <li><a href="./3_Squid Game/index.html">Squid Game</a></li>
+                        <li><a href="./4_Joker/index.html">Joker</a></li>
+                        <li><a href="./5_ironman/index.html">Iron man</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">專題報告 +</a>
+                    <ul>
+                        <li><a href="./ Travel Agency/index.html">Travel Agency</a></li>
+                        <li><a href="./food/index.html">Food.</a></li>
+                        <li><a href="./More Cars/index.html">More Cars</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <h3>This is my special report</h3>
+        <p class="content">Thank you for watching and teaching</p>
+    </div>
+
+
+
+    <script>
+        document.querySelector('#menu-btn').onclick = () =>{
+            document.querySelector('#menu-btn').classList.toggle('fa-times');
+            document.querySelector('.navbar').classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>

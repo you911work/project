@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Man</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="">
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://zh.wikipedia.org/zh-tw/%E9%8B%BC%E9%90%B5%E4%BA%BA">Movie</a></li>
+                    <li><a href="#">Trailer</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="banner">
+            <div class="banner-img">
+            </div>
+            <div class="banner-text">
+                <h1>Iron Man</h1>
+                <p>
+                    Marvel於60年代推出的第一部漫畫作品改編，小勞勃道尼將身穿著超級戰甲，扮演天才發明企業家，飛天遁地、主持正義除暴安良。
+                </p>
+                <a class="btn" onclick="toggleVideo();">Watch Trailer</a>
+            </div>
+
+            <div class="trailer">
+                <video src="./Iron Man (2008) Trailer .mp4" controls="true" ></video>
+                <img src="close.png" class="close" onclick="toggleVideo();">
+            </div>
+        </div>
+
+    <script>
+        function toggleVideo(){
+            const trailer = document.querySelector('.trailer');
+            const video = document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+
+</body>
+</html>

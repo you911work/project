@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/travel.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./style.css">
+    <title>Travel Agency </title>
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="../index.html" class="logo"><span>T</span>ravel</a>
+        <nav class="navbar">
+            <a href="#home">首頁</a>
+            <a href="#book">訂購行程</a>
+            <a href="#packages">套裝行程</a>
+            <a href="#services">服務項目</a>
+            <a href="#gallery">優美風景</a>
+            <a href="#review">顧客意見</a>
+            <a href="#contact">聯絡我們</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>會員登入</h3>
+            <input type="email" class="box" placeholder="請輸入你的信箱">
+            <input type="password" class="box" placeholder="請輸入你的密碼">
+            <input type="submit" value="登入" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">記住我</label>
+            <p>忘記密碼?<a href="#">請按這裡</a></p>
+            <p>沒有會員帳戶?  <a href="#">現在註冊</a></p>
+        </form>
+    </div>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>冒險是值得的~</h3>
+            <p>和我們一起發現新的地方!</p>
+            <a href="#" class="btn">發現更多</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="./images/vid1.mp4"></span>
+            <span class="vid-btn" data-src="./images/vid2.mp4"></span>
+            <span class="vid-btn" data-src="./images/vid3.mp4"></span>
+            <span class="vid-btn" data-src="./images/vid4.mp4"></span>
+            <span class="vid-btn" data-src="./images/vid5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="./images/vid1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>訂</span>
+            <span>購</span>
+            <span>行</span>  
+            <span>程</span>       
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="./images/book.avif" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <h3>旅遊地點</h3>
+                    <input type="text" placeholder="地點"> 
+                </div>
+                <div class="inputBox">
+                    <h3>旅客人數</h3>
+                    <input type="number" placeholder="人數">
+                </div>
+                <div class="inputBox">
+                    <h3>出發日期</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>離開日期</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="即刻訂購">
+            </form>
+        </div>
+    </section>
+
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>套</span>
+            <span>裝</span>
+            <span>行</span>
+            <span>程</span>         
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="./images/p1.avif" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> 京都-五天四夜行程</h3>
+                    <p>京都-五天四夜行程可說是名符其實的千年古都，在這座歷史悠久的城市裡，曾經的戰亂與紛擾如今沈澱為豐富的人文文化風情及古色古香的風華</p>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $39.900 <span>$72.000</span></div>
+                    <a href="#" class="btn">即刻訂購</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/p2.avif" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> 京都-五天四夜行程</h3>
+                    <p>京都-五天四夜行程可說是名符其實的千年古都，在這座歷史悠久的城市裡，曾經的戰亂與紛擾如今沈澱為豐富的人文文化風情及古色古香的風華</p>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $39.900 <span>$72.000</span></div>
+                    <a href="#" class="btn">即刻訂購</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/p3.avif" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> 京都-五天四夜行程</h3>
+                    <p>京都-五天四夜行程可說是名符其實的千年古都，在這座歷史悠久的城市裡，曾經的戰亂與紛擾如今沈澱為豐富的人文文化風情及古色古香的風華</p>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $39.900 <span>$72.000</span></div>
+                    <a href="#" class="btn">即刻訂購</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/p4.avif" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> 京都-五天四夜行程</h3>
+                    <p>京都-五天四夜行程可說是名符其實的千年古都，在這座歷史悠久的城市裡，曾經的戰亂與紛擾如今沈澱為豐富的人文文化風情及古色古香的風華</p>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $39.900 <span>$72.000</span></div>
+                    <a href="#" class="btn">即刻訂購</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/p5.avif" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> 京都-五天四夜行程</h3>
+                    <p>京都-五天四夜行程可說是名符其實的千年古都，在這座歷史悠久的城市裡，曾經的戰亂與紛擾如今沈澱為豐富的人文文化風情及古色古香的風華</p>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $39.900 <span>$72.000</span></div>
+                    <a href="#" class="btn">即刻訂購</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/p6.avif" alt="">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> 京都-五天四夜行程</h3>
+                    <p>京都-五天四夜行程可說是名符其實的千年古都，在這座歷史悠久的城市裡，曾經的戰亂與紛擾如今沈澱為豐富的人文文化風情及古色古香的風華</p>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> $39.900 <span>$72.000</span></div>
+                    <a href="#" class="btn">即刻訂購</a>
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>服</span>
+            <span>務</span>
+            <span>項</span>
+            <span>目</span>          
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>平價酒店</h3>
+                <p>姑娘明年我就英文，機會如果您。姑娘明年我就英文，機會如果您。</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>飲食項目</h3>
+                <p>姑娘明年我就英文，機會如果您。姑娘明年我就英文，機會如果您。</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>安全指南</h3>
+                <p>姑娘明年我就英文，機會如果您。姑娘明年我就英文，機會如果您。</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>遍布全球</h3>
+                <p>姑娘明年我就英文，機會如果您。姑娘明年我就英文，機會如果您。</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>快速成行</h3>
+                <p>姑娘明年我就英文，機會如果您。姑娘明年我就英文，機會如果您。</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>挑戰旅程</h3>
+                <p>姑娘明年我就英文，機會如果您。姑娘明年我就英文，機會如果您。</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>優</span>
+            <span>美</span>
+            <span>風</span>
+            <span>景</span>      
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="./images/g1.avif" alt="">
+                <div class="content">
+                    <h3>美麗景色</h3>
+                    <p>本網站一個正常有限責任公司，突出好看陽。</p>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/g2.avif" alt="">
+                <div class="content">
+                    <h3>美麗景色</h3>
+                    <p>本網站一個正常有限責任公司，突出好看陽。</p>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/g3.avif" alt="">
+                <div class="content">
+                    <h3>美麗景色</h3>
+                    <p>本網站一個正常有限責任公司，突出好看陽。</p>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/g4.avif" alt="">
+                <div class="content">
+                    <h3>美麗景色</h3>
+                    <p>本網站一個正常有限責任公司，突出好看陽。</p>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/g5.avif" alt="">
+                <div class="content">
+                    <h3>美麗景色</h3>
+                    <p>本網站一個正常有限責任公司，突出好看陽。</p>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/g6.avif" alt="">
+                <div class="content">
+                    <h3>美麗景色</h3>
+                    <p>本網站一個正常有限責任公司，突出好看陽。</p>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/g7.avif" alt="">
+                <div class="content">
+                    <h3>美麗景色</h3>
+                    <p>本網站一個正常有限責任公司，突出好看陽。</p>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/g8.avif" alt="">
+                <div class="content">
+                    <h3>美麗景色</h3>
+                    <p>本網站一個正常有限責任公司，突出好看陽。</p>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./images/g9.avif" alt="">
+                <div class="content">
+                    <h3>美麗景色</h3>
+                    <p>本網站一個正常有限責任公司，突出好看陽。</p>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>顧</span>
+            <span>客</span>
+            <span>意</span>
+            <span>見</span>      
+        </h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./images/pic1.avif" alt="">
+                        <h3>湯尼 史塔克</h3>
+                        <p>公司鄰近台灣大道，交通方便，公司內環境優美，旅遊價格公道，帶團服務品質良好。</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./images/pic4.avif" alt="">
+                        <h3>湯尼 史塔克</h3>
+                        <p>公司鄰近台灣大道，交通方便，公司內環境優美，旅遊價格公道，帶團服務品質良好。</p>
+                        <div class="starts">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./images/pic2.avif" alt="">
+                        <h3>湯尼 史塔克</h3>
+                        <p>公司鄰近台灣大道，交通方便，公司內環境優美，旅遊價格公道，帶團服務品質良好。</p>
+                        <div class="starts">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./images/pic3.avif" alt="">
+                        <h3>湯尼 史塔克</h3>
+                        <p>公司鄰近台灣大道，交通方便，公司內環境優美，旅遊價格公道，帶團服務品質良好。</p>
+                        <div class="starts">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h1 class="heading">
+            <span>聯</span>
+            <span>絡</span>
+            <span>我</span>
+            <span>們</span>   
+        </h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="./images/img.avif" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="姓名">
+                    <input type="email" placeholder="電子信箱">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="聯絡電話">
+                    <input type="number" placeholder="家用電話">
+                </div>
+                <textarea placeholder="請留下您的寶貴意見" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="發送訊息">
+            </form>
+        </div>
+    </section>
+
+    <section class="brand-container">
+        <h1 class="heading">
+            <span>合</span>
+            <span>作</span>
+            <span>廠</span>
+            <span>商</span>     
+        </h1>
+        <div class="swiper brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/1.svg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/2.svg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/4.svg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/6.svg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>關於我們</h3>
+                <p>自成立以來搭配飛航台灣的外籍航空公司及低成本航空公司，規劃而成的特色行程商品，包括團體旅遊、半自助旅遊和自由行。</p>
+            </div>
+            <div class="box">
+                <h3>全省分店</h3>
+                <a href="#">新北板橋店</a>
+                <a href="#">台中站前店</a>
+                <a href="#">台南仁德店</a>
+                <a href="#">高雄左營店</a>
+            </div>
+            <div class="box">
+                <h3>快速連結</h3>
+                <a href="#home">首頁</a>
+                <a href="#book">訂購行程</a>
+                <a href="#packages">套裝行程</a>
+                <a href="#services">服務項目</a>
+                <a href="#gallery">優美風景</a>
+                <a href="#review">顧客意見</a>
+                <a href="#contact">聯絡我們</a>
+            </div>
+            <div class="box">
+                <h3>瞭解更多</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+        </div>
+        <h1 class="credit"> Copyright © 2023 陳彥華版權所有</h1>
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

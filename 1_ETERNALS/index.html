@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/movie.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>ETERNALS</title>
+</head>
+
+<body>
+    <section class="banner">
+        <div class="box content">
+            <header>
+                <a href="../index.html" class="logo"><img src="./Images/logo.png" alt=""></a>
+                <ul>
+                    <li><a href="https://zh.wikipedia.org/zh-tw/%E6%B0%B8%E6%81%86%E6%97%8F_(%E9%9B%BB%E5%BD%B1)">About Us</a></li>
+                    <li><a href="https://www.disneyplus.com/zh-hant/brand/disney">Disney+</a></li>
+                    
+                </ul>
+            </header>
+            <div class="contentBox">
+                <img src="./Images/eternals.png" alt="">
+                <p>當你深愛某樣東西時，你就會為之奮鬥。</p>
+                <a href="#" class="btn" onclick="toggle();" >瞭解更多</a>
+            </div>
+            <ul class="sci">
+                <li><a href="#"><img src="./Images/twitter.png" alt=""></a></li>
+                <li><a href="#"><img src="./Images/instagram.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="box images">
+            <div class="imgBx"><img src="./Images/img1.jpg" alt=""></div>
+            <div class="imgBx"><img src="./Images/img2.jpg" alt=""></div>
+            <div class="imgBx"><img src="./Images/img3.jpg" alt=""></div>
+        </div>
+    </section>
+
+
+    <div class="trailer">
+        <video src="./Eternals.mp4" controls="true"></video>
+        <img src="./Images/close.png" class="close" onclick="toggle();">
+    </div>
+
+
+
+    <script>
+        function toggle(){
+            var trailer = document.querySelector('.trailer');
+            var video = document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        } 
+        
+    </script>
+
+</body>
+
+</html>

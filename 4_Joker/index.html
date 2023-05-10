@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/movie.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Joker</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo"><img src="./assets/logo.png" alt=""></a>
+        <div class="toggle"><img src="./assets/toggle.png" alt=""></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Put on a <span>Happy</span> face</h2>
+            <p>社會邊緣人亞瑟佛萊克，他如何從一個失敗的喜劇演員，一步一步成為高譚市最邪惡、最頂尖的超級罪犯。</p>
+            <a href="#" class="play" onclick="toggle();"><img src="./assets/play.png" alt="">Watch Trailer</a>
+            <div class="slide"></div>
+            <ul class="sci">
+                <li><a href="#"><img src="./assets/facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="./assets/instagram.png" alt=""></a></li>
+                <li><a href="#"><img src="./assets/twitter.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="./Joker.mp4" controls="true"></video>
+        <img src="./assets/close.png" class="close" onclick="toggle();">
+    </div>
+
+    <script>
+        function toggle(){
+            var trailer = document.querySelector('.trailer');
+            var video = document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        } 
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    height: 100%;
+    font-size: 18px;
+    color: #fff;
+    font-family: "open sans";
+}
+
+.top-part {
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: .5s;
+}
+
+ul , li {
+    list-style-type: none;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 80px;
+    background-color: rgba(0, 0, 0, 0.438);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    padding-right: 20px;
+}
+
+a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.banner-text {
+    position: absolute;
+    top: 43%;
+    left: 10%;
+    width: 70%;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: rgb(255, 0, 0);
+    width: 200px;
+    height:50px;
+    padding-top: 12px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.banner-img {
+    min-height: 100vh;
+    background-image: url(./ironman.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-img::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.404);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.trailer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    visibility: hidden;
+    opacity: 0;
+}
+.trailer.active{
+    visibility: visible;
+    opacity: 1;
+}
+.trailer video{
+    max-width: 1200px;
+    max-height: 900px;
+    outline: none;
+}
+.close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+}
+
+
+
+@media (max-width: 991px) {
+    header{
+        padding: 30px 50px;
+        flex-direction: column;
+    }
+    .navigation{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+    .banner{
+        position: relative;
+    }
+
+    .banner-img img{
+        height: 100vh;
+        width: 100%;
+    }
+    .trailer video{
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 600px){
+    header{
+        padding: 20px;
+    }
+
+} 

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/movie.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Squid Game</title>
+</head>
+
+<body>
+    <section class="banner">
+        <header>
+            <div class="toggle"></div>
+            <a href="../index.html" class="logo"><img src="./images/logo.png" alt=""></a>
+        </header>
+
+        <div class="content">
+            <img src="./images/text.png" class="textimg">
+            <p>該劇講述456名背景各異但一樣債台高築的玩家，為了贏得456億韓元的獎金參加一系列致命的兒童遊戲。該系列的名字取自於名字相似的韓國兒童遊戲。</p>
+            <a href="#" class="btn" onclick="toggle();"><ion-icon name="play-circle-outline"></ion-icon>watch Trailer</a>
+        </div>
+
+        <div class="clip">
+            <div class="clipBox">
+                <img src="./images/img1.jpg" alt="">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </div>
+            <div class="clipBox">
+                <img src="./images/img2.jpg" alt="">
+                <ion-icon name="play-circle-outline"></ion-icon>
+            </div>
+        </div>
+
+        <ul class="sci">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        </ul>
+    </section>
+
+    <ul class="naviation">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="https://zh.wikipedia.org/zh-tw/%E9%AD%B7%E9%AD%9A%E9%81%8A%E6%88%B2">About</a></li>
+        <li><a href="#">Cast</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div class="trailer">
+        <video src="./Squid Game.mp4" controls="true"></video>
+        <img src="./images/close.png" class="close" onclick="toggle();">
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let naviation = document.querySelector('.naviation');
+        menuToggle.onclick = function () {
+            menuToggle.classList.toggle('active');
+            naviation.classList.toggle('active');
+        }
+
+
+        function toggle(){
+            var trailer = document.querySelector('.trailer');
+            var video = document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        } 
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css">
+    <title>More Cars</title>
+</head>
+
+<body>
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="../index.html" class="logo"> <span>More</span> Cars</a>
+        <nav class="navbar">
+            <a href="#home">首頁</a>
+            <a href="#vehicles">熱銷車款</a>
+            <a href="#services">服務項目</a>
+            <a href="#featured">精選車款</a>
+            <a href="#reviews">顧客評論</a>
+            <a href="#contact">聯絡我們</a>
+        </nav>
+
+        <div id="login-btn">
+            <button class="btn">登入</button>
+            <i class="far fa-user"></i>
+        </div>
+    </header>
+
+    <div class="login-form-container">
+
+        <span class="fas fa-times" id="close-login-form"></span>
+
+        <form action="">
+            <h3>會員登入</h3>
+            <input type="email" placeholder="帳號" class="box">
+            <input type="password" placeholder="密碼" class="box">
+            <p>忘記密碼 <a href="#">按這裡</a></p>
+            <input type="sumbit" value="登入" class="btn">
+            <p>或者是使用以下資料登入</p>
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
+            </div>
+            <p>如果您還不是會員<a href="#"> 建立帳號</a></p>
+        </form>
+
+    </div>
+
+    <section class="home" id="home">
+        <h1 class="home-parallax">尋找最適合您的車</h1>
+        <img src="./images/home-img.png" class="home-parallax">
+        <a href="#" class="btn home-parallax">搜尋更多</a>
+    </section>
+
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-home"></i>
+            <div class="content">
+                <h3>5+</h3>
+                <p>全省分店</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>4770+</h3>
+                <p>每季銷售數字</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <div class="content">
+                <h3>590+</h3>
+                <p>每季購買客人</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>890+</h3>
+                <p>每季新車數量</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="vehicles" id="vehicles">
+        <h1 class="heading">熱銷 <span>車款</span></h1>
+        <div class="swiper vehicles-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle1.png" alt="">
+                    <div class="content">
+                        <h3>車名</h3>
+                        <div class="price"> <span>price:</span>$650000/-</div>
+                        <p>
+                            新車
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle2.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle3.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle4.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle5.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle6.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle7.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle8.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle9.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle10.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle11.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle12.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle13.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle14.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle15.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle16.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle17.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle18.png" alt="">
+                    <div class="content">
+                        <h3>新車</h3>
+                        <div class="price"> <span>price:</span>$65000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>2023
+                            <span class="fas fa-circle"></span>自排
+                            <span class="fas fa-circle"></span>汽油
+                            <span class="fas fa-circle"></span>最高時速:183mph
+                        </p>
+                        <a href="#" class="btn">瞭解更多</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+        <h1 class="heading">服務<span> 項目</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-car"></i>
+                <h3>車輛銷售</h3>
+                <p>專業認證 / 延長保固 / 滿意保證，購車倍感安心。我們將為您尋找愛車及提供優質鑑價服務，來自原廠的承諾，讓您購車安心加倍。</p>
+                <a href="#" class="btn">瞭解更多</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-tools"></i>
+                <h3>零件維修</h3>
+                <p>呵護愛車，從選擇我們開始，提供最完整的保養專案，不只例行保養，更為您把關愛車車況。</p>
+                <a href="#" class="btn">瞭解更多</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-car-crash"></i>
+                <h3>汽車保險</h3>
+                <p>線上投保汽車保險交給我們，不管是直接網路投保還是傳真要保車險，都可以幫你免費試算汽車保險費用，直接線上投保還有專屬的優惠，省荷包還能保障你的愛車！</p>
+                <a href="#" class="btn">瞭解更多</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-car-battery"></i>
+                <h3>更換電瓶</h3>
+                <p>各大國產進口電池品牌批發零售，並提供免費代客不斷電安裝及到府安裝. 連接電腦清除故障碼。原廠同等級更換程序。</p>
+                <a href="#" class="btn">瞭解更多</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-gas-pump"></i>
+                <h3>機油更換</h3>
+                <p>與國際知名油商技術合作，新車老車都安心的HOT機油，提供引擎絕佳保護。提供絕佳的抗磨耗保護與清潔效果，HOT機油讓愛車動力輸出更順暢!</p>
+                <a href="#" class="btn">瞭解更多</a>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>24小時服務</h3>
+                <p>24H現場急修換胎、接電、送油讓你直接上路。.客制服務細心回答 ... 24小時全年無休。</p>
+                <a href="#" class="btn">瞭解更多</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured" id="featured">
+        <h1 class="heading"><span>精選</span>車款</h1>
+
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./images/car1.png" alt="">
+                    <div class="soldout">
+                        <img src="./images/sold-out.webp" alt="">
+                    </div>
+                    <h3>新車</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/car2.png" alt="">
+                    <h3>新車</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/car3.png" alt="">
+                    <h3>新車</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/car4.png" alt="">
+                    <h3>新車</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./images/car5.png" alt="">
+                    <div class="soldout">
+                        <img src="./images/sold-out.webp" alt="">
+                    </div>
+                    <h3>新車</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/car6.png" alt="">
+                    <h3>新車</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/car7.png" alt="">
+                    <div class="soldout">
+                        <img src="./images/sold-out.webp" alt="">
+                    </div>
+                    <h3>新車</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/car8.png" alt="">
+                    <div class="soldout">
+                        <img src="./images/sold-out.webp" alt="">
+                    </div>
+                    <h3>新車</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$55,000/-</div>
+                    <a href="#" class="btn">瞭解更多</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <h3>訂閱最新電子報</h3>
+        <p>感謝您的訂閱 我們隨時提供您最即時、熱門的訊息。</p>
+
+        <form action="">
+            <input type="email" placeholder="請輸入您的電子郵件">
+            <input type="submit" class="subscribe">
+        </form>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <h1 class="heading">顧客<span>評論</span></h1>
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./images/pic-1.png" alt="">
+                    <div class="content">
+                        <p>師傅與小姐服務態度親切。</p>
+                        <h3>湯尼 史塔克</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/pic-2.png" alt="">
+                    <div class="content">
+                        <p>顧客休息區明亮寬敞舒適。</p>
+                        <h3>湯尼 史塔克</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/pic-3.png" alt="">
+                    <div class="content">
+                        <p>師傅與小姐服務態度親切。</p>
+                        <h3>湯尼 史塔克</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/pic-4.png" alt="">
+                    <div class="content">
+                        <p>很值得推薦換胎與保養的好地方。</p>
+                        <h3>湯尼 史塔克</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/pic-5.png" alt="">
+                    <div class="content">
+                        <p>顧客休息區明亮寬敞舒適。</p>
+                        <h3>湯尼 史塔克</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/pic-6.png" alt="">
+                    <div class="content">
+                        <p>師傅與小姐服務態度親切。</p>
+                        <h3>湯尼 史塔克</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="heading"> <span>聯絡</span>我們</h1>
+        <div class="row">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232917.33236075524!2d120.47307175137551!3d24.1951031465646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469161ac2b05a83%3A0x2b81dc191ffb424d!2z5Yex5oKF5rG96LuK5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1682999355668!5m2!1szh-TW!2stw"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="">
+                <h3>聯絡方式</h3>
+                <input type="text" placeholder="姓名" class="box">
+                <input type="email" placeholder="電子郵件" class="box">
+                <input type="number" placeholder="手機號碼" class="box">
+                <textarea placeholder="請留下您的寶貴意見，我們將儘快與您聯繫！" class="box" name="" id="" cols="30" rows="10"></textarea>
+                <input type="sumbit" value="發送訊息" class="btn">
+            </form>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>分店訊息</h3>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>台北圓山店</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>新北板橋店</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>台中站前店</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>台南仁德店</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>高雄仁武店</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home"><i class="fas fa-arrow-right"></i>首頁</a>
+                <a href="#vehicles"><i class="fas fa-arrow-right"></i>熱銷車款</a>
+                <a href="#services"><i class="fas fa-arrow-right"></i>服務項目</a>
+                <a href="#featured"><i class="fas fa-arrow-right"></i>精選車款</a>
+                <a href="#reviews"><i class="fas fa-arrow-right"></i>顧客評論</a>
+                <a href="#contact"><i class="fas fa-arrow-right"></i>聯絡我們</a>
+            </div>
+
+            <div class="box">
+                <h3>聯繫方式</h3>
+                <a href="#"><i class="fas fa-phone"></i>04-1234567</a>
+                <a href="#"><i class="fas fa-phone"></i>0912345678</a>
+                <a href="#"><i class="fas fa-envelope"></i>you911work@gmail.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i>台中市西屯區福科路123號</a>
+            </div>
+
+            <div class="box">
+                <h3>聯繫方式</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+                <a href="#"><i class="fab fa-pinterest"></i>pinterest</a>
+            </div>
+        </div>
+        <div class="credit">credit © 陳彥華製</div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

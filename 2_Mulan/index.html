@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Images/movie.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Mulan</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo"><img src="./images/logo.png" alt=""></a>
+        <ul class="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="https://zh.wikipedia.org/zh-tw/%E8%8A%B1%E6%9C%A8%E5%85%B0_(2020%E5%B9%B4%E7%94%B5%E5%BD%B1)">About Us</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="./images/bg.jpg" class="bg">
+        <div class="content">
+            <img src="./images/name.png" class="movieTitle">
+            <h4>
+                <span>2020</span>
+                <span><i>12+</i></span>
+                <span>1h 55min</span>
+                <span>Action</span>
+            </h4>
+            <p>迪士尼帶來的《花木蘭》，重新再現了有著數百年歷史的中國詩歌中，不朽的傳奇女戰士。這部真人電影秉承其中國的根源，也呈現了華裔巨星與年輕新秀的精彩結合。</p>
+            <div class="buttons">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>
+                    Play</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>
+                    My List</a>
+            </div>
+        </div>
+        <a class="play" onclick="toggleVideo();"><img src="./images/play.png">Watch Trailer</a>
+    </div>
+    <div class="trailer">
+        <video src="./Mulan.mp4" controls="true" ></video>
+        <img src="./images/close.png" class="close" onclick="toggleVideo();">
+    </div>
+
+    <script>
+        function toggleVideo(){
+            const trailer = document.querySelector('.trailer');
+            const video = document.querySelector('video');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+</body>
+</html>
